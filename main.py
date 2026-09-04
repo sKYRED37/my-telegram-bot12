@@ -25,17 +25,16 @@ logging.basicConfig(level=logging.INFO)
 
 # ==================== НАСТРОЙКИ ====================
 # Токен бота от @BotFather
-BOT_TOKEN = "ВСТАВЬ_СЮДА_ТОКЕН"
-
+BOT_TOKEN = "8472101199:AAGlbOQroXPAGbB27LAn2zWEaktXUrUNMV0"
 # Твой личный Telegram id (число, БЕЗ минуса). Узнать у @userinfobot.
 # Только этот человек сможет открывать /admin и менять, куда идут заявки
-OWNER_ID = 000000000
+OWNER_ID = 1766395031
 
 # Куда слать заявки по умолчанию, ПОКА владелец не настроит это через /admin
-DEFAULT_DESTINATION_CHAT_ID = OWNER_ID
+DEFAULT_DESTINATION_CHAT_ID = 0
 # ====================================================
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=8472101199:AAGlbOQroXPAGbB27LAn2zWEaktXUrUNMV0)
 dp = Dispatcher(storage=MemoryStorage())
 
 BOT_NAME = "Brief NEWS"
