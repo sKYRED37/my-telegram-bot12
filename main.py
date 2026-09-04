@@ -534,4 +534,12 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    if __name__ == "__main__":
+    import traceback
+    try:
+        asyncio.run(main())
+    except Exception as e:
+        error_text = traceback.format_exc()
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "error.log"), "w", encoding="utf-8") as f:
+            f.write(error_text)
+        raise e
