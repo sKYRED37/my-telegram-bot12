@@ -21,6 +21,8 @@ from aiogram.types import (
     ReplyKeyboardRemove,
 )
 
+import storage
+
 logging.basicConfig(level=logging.INFO)
 
 # ==================== НАСТРОЙКИ ====================
